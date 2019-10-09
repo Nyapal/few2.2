@@ -1,0 +1,109 @@
+// Background
+$bg-color: skyblue;
+
+// Plant Pot
+$pot-brdr-top: 100px solid brown;
+$pot-brdr-left: 25px solid transparent;
+$pot-brdr-right: 25px solid transparent;
+$pot-height: 0px;
+$pot-width: 100px;
+
+// Plant Stem
+$stem-color: green;
+$stem-mgn-left: ($pot-width + 50) / 2;
+$stem-height: 75px;
+$stem-width: 10px;
+
+// Plant Seeds 
+$seed-color: rgb(46, 29, 29);
+$seed-brdr-radius: 50%;
+$seed-width: 100px;
+$seed-height: 100px;
+$seed-mgn-left: ($pot-width + 40) / 2;
+
+// Plant Petals
+$petal-color: yellow;
+$petal-brdr: 1px solid white;
+$petal-brdr-radius: 45%;
+$petal-width: 90px;
+$petal-height: 60px;
+$petal-mgn-top: -15px;
+$petal-mgn-left: 30px;
+$petal-transform: rotate(270deg);
+
+@for $i from 0 through 360 {
+  $transform: $i + 45deg;
+
+  .petal-#{$i} {
+    background: $petal-color;
+    border: $petal-brdr;
+    border-radius: $petal-brdr-radius;
+    width: $petal-width;
+    height: $petal-height;
+    transform: rotate($transform);
+  }
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg-color;
+}
+
+.pot {
+  border-top: $pot-brdr-top;
+  border-left: $pot-brdr-left;
+  border-right: $pot-brdr-right;
+  height: $pot-height;
+  width: $pot-width;
+}
+
+.stem {
+  background-color: $stem-color;
+  margin-left: $stem-mgn-left;
+  height: $stem-height;
+  width: $stem-width;
+}
+
+
+.seeds {
+  background: $seed-color;
+  border-radius: $seed-brdr-radius;
+  width: $seed-width;
+  height: $seed-height;
+  margin-top: -75px;
+  margin-left: (($pot-width + 50) / 4);
+}
+
+.petals {
+  background: $petal-color;
+  border: $petal-brdr;
+  border-radius: $petal-brdr-radius;
+  width: $petal-width;
+  height: $petal-height;
+  margin-top: $petal-mgn-top;
+  margin-left: $petal-mgn-left;
+  transform: $petal-transform;
+}
+
+.petal-0 {
+  margin-top: -85px;
+  margin-left: 90px;
+}
+
+.petal-45 {
+  margin-top: 75px;
+  margin-left: -35px;
+}
+
+.petal-90 {
+  margin-top: 75px;
+  margin-left: -35px;
+}
+
+.petal-135 {
+  margin-top: 75px;
+  margin-left: -35px;
+}

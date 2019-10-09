@@ -1,0 +1,186 @@
+/* 
+:root {
+  --font-family: --apple-system, BlinkMacSyst emFont, 'Segoe UI';
+  --font-size: 18px;
+  --bg-color: #dad5d5;
+  --fg-color: #fff;
+  --link-color: #f0f;
+}
+*/
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Open Sans', 'Helvetica', 'Verdana';
+  font-size: 16px;
+  line-height: 1.25em;
+  color: #17073D;
+  background-color: rgba(249, 249, 249, 0.961);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgb(134, 183, 255);
+}
+.navbar > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 1em;
+}
+
+.navbar h1 {
+  margin: 25px;
+}
+
+hr {
+  display: block;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-family: 'Allura';
+}
+
+h2 {
+  font-size: 1.75em; 
+}
+
+h3 {
+  font-size: 2.00em;
+  font-family: 'Allura';
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.75em;
+  font-family: 'Allura';
+}
+
+h6 {
+  font-size: 1.25em;
+}
+
+strong {
+  font-weight: 625;
+}
+
+em {
+  font-style: italic;
+  font-weight: 345;
+}
+
+abbr {
+  text-decoration: none
+}
+
+abbr:hover {
+  color: green;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+mark {
+  background-color: rgb(237, 197, 254);
+}
+
+
+a {
+  color: #1B51AA;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(23, 97, 216);
+}
+
+a:active {
+  color: rgb(185, 211, 145)
+  
+}
+a:visited {
+  color: rgb(43, 63, 12)
+  
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer > ul {
+  list-style: none;
+}
+
+.split-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.active {
+  order: -1;
+  flex: 1 0 100%;
+}
+
+.split-section header {
+  /* text-align: center; */
+  float: left;
+  width: 45%;
+  margin: 5px;
+}
+
+.split-section p {
+  /* text-align: center; */
+  float: right;
+  width: 50%;
+}
+
+/* .split-section footer {
+  position: absolute; 
+  bottom: 0;
+} */
+
+.img-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;;
+  align-items: baseline;
+  text-align: center;
+}
+
+li:hover {
+  background-color: rgb(252, 252, 188);
+}
+
+button:first-child {
+  background-color: aliceblue;
+  padding: 12px;
+  font-size: 24px;
+  border-radius: 45px;
+}
+button:first-child:hover {
+  color: rgb(8, 172, 242);
+}
+
+li {
+  list-style: none;
+}
